@@ -7,6 +7,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
     background: #fff;
     color: #1d1d1f;
+    line-height: 1.6;
 }
 
 .navbar {
@@ -36,22 +37,22 @@ body {
 }
 
 .hero {
-    position: relative;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px auto 0;
     display: block;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 40px;
 }
 
 .hero-content h1 {
@@ -63,20 +64,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 60px;
     padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .product {
-    flex: 1 1 300px;
-    max-width: 300px;
+    flex: 0 1 220px;
     text-align: center;
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
+    object-fit: cover;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product h2 {
