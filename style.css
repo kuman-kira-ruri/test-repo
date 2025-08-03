@@ -58,15 +58,30 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 0.875rem;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
 
-.hero-categories img {
+.hero-categories li:hover {
+    background-color: #f5f5f7;
+}
+
+.hero-categories li:nth-child(4) {
+    background-color: #007aff;
+    color: white;
+}
+
+.hero-categories img,
+.hero-categories svg {
     width: 40px;
     height: 40px;
     margin-bottom: 5px;
+    color: currentColor;
 }
 
-.hero img {
+.hero img,
+.hero svg {
     width: 150px;
     height: 150px;
     border-radius: 20px;
@@ -74,6 +89,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin: 40px auto 0;
     display: block;
+    color: #1d1d1f;
 }
 
 .hero-content {
@@ -103,15 +119,23 @@ body {
     border-radius: 20px;
     background: #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product img {
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product img,
+.product svg {
     width: 150px;
     height: 150px;
     border-radius: 20px;
     object-fit: cover;
     margin: 0 auto;
     box-shadow: none;
+    color: #1d1d1f;
 }
 
 .product h2 {
